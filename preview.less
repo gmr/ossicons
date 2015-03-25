@@ -1,0 +1,71 @@
+// Core variables and mixins
+@import "variables.less";
+
+// Override specific variables for less less
+@brand-primary:               #0079c1;
+@icon-font-path:              "fonts";
+@font-family-sans-serif:      "Source Sans Pro", Helvetica, Sans-Serif;
+@container-desktop:           (852px + @grid-gutter-width);
+@container-md:                @container-desktop;
+@container-large-desktop:     (852px + @grid-gutter-width);
+@container-lg:                @container-large-desktop;
+@code-color:                  @gray-light;
+@code-bg:                     transparent;
+
+@import "mixins.less";
+
+// Reset and dependencies
+@import "normalize.less";
+@import "print.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+@import "code.less";
+@import "grid.less";
+@import "buttons.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";
+
+@import "less/ossicons.less";
+
+// Preview Site Specific things
+.icon-box {
+  text-align: center;
+  border: 1px solid @gray-light;
+  border-radius: @border-radius-base;
+  padding: 1em;
+  display: inline-block;
+  margin: 7px 5px;
+  width: 200px;
+  color: @gray-light;
+  i {
+    color: @gray-dark;
+    font-size: 32pt;
+  }
+  p {
+      margin: 1em 0 0 0;
+      padding: 0;
+  }
+  &:hover {
+    i {
+        color: @brand-primary;
+    }
+  }
+}
+
+body {
+    padding-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: @brand-primary;
+}
+
+h3 {
+    padding-bottom: .25em;
+    border-bottom: 1px solid @gray-light;
+}
