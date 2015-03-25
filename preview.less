@@ -5,9 +5,9 @@
 @brand-primary:               #0079c1;
 @icon-font-path:              "fonts";
 @font-family-sans-serif:      "Source Sans Pro", Helvetica, Sans-Serif;
-@container-desktop:           (885px + @grid-gutter-width);
+@container-desktop:           (904px + @grid-gutter-width);
 @container-md:                @container-desktop;
-@container-large-desktop:     (885px + @grid-gutter-width);
+@container-large-desktop:     (904px + @grid-gutter-width);
 @container-lg:                @container-large-desktop;
 @code-color:                  @gray-light;
 @code-bg:                     transparent;
@@ -42,7 +42,7 @@
   padding: 1em;
   display: inline-block;
   margin: 7px 5px;
-  width: 200px;
+  width: 205px;
   color: @gray-light;
   i {
     color: @gray-dark;
@@ -74,4 +74,15 @@ h1, h2, h3, h4, h5 {
 h3 {
     padding-bottom: .25em;
     border-bottom: 1px solid @gray-light;
+}
+
+.header {
+    background: @brand-primary;
+    color: #fff;
+    padding: .5em 0 1em 0;
+    margin-bottom: 2.5em;
+    box-shadow: 0px 2px 2px @gray-light;
+    h1 {
+      color: #fff;
+    }
 }
