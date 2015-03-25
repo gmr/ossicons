@@ -5,9 +5,9 @@
 @brand-primary:               #0079c1;
 @icon-font-path:              "fonts";
 @font-family-sans-serif:      "Source Sans Pro", Helvetica, Sans-Serif;
-@container-desktop:           (852px + @grid-gutter-width);
+@container-desktop:           (885px + @grid-gutter-width);
 @container-md:                @container-desktop;
-@container-large-desktop:     (852px + @grid-gutter-width);
+@container-large-desktop:     (885px + @grid-gutter-width);
 @container-lg:                @container-large-desktop;
 @code-color:                  @gray-light;
 @code-bg:                     transparent;
@@ -24,6 +24,8 @@
 @import "code.less";
 @import "grid.less";
 @import "buttons.less";
+@import "panels.less";
+@import "component-animations.less";
 
 // Utility classes
 @import "utilities.less";
@@ -33,8 +35,9 @@
 
 // Preview Site Specific things
 .icon-box {
+  background: @gray-lighter;
   text-align: center;
-  border: 1px solid @gray-light;
+  border: 1px solid #fff;
   border-radius: @border-radius-base;
   padding: 1em;
   display: inline-block;
@@ -52,6 +55,9 @@
   &:hover {
     i {
         color: @brand-primary;
+    }
+    code {
+      color: @brand-primary;
     }
   }
 }
