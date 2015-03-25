@@ -1,5 +1,5 @@
 # ossicons
-Icon font for popular Open Source projects
+An icon font for popular Open Source project logos
 
 ## Icons
 

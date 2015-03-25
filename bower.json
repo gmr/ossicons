@@ -1,0 +1,26 @@
+{
+  "name": "ossicons",
+  "version": "1.0.0",
+  "homepage": "https://gmr.github.io/ossicons",
+  "authors": [
+    "Gavin M. Roy <gavinmroy@gmail.com>"
+  ],
+  "description": "An icon font of popular open source project logos",
+  "main": "src/css/ossicons.css",
+  "keywords": [
+    "icon",
+    "font"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "site",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
